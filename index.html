@@ -86,6 +86,17 @@
   .media-card .mc-body{padding:18px 22px 20px}
   .media-card h3{font-size:1.1rem;margin:6px 0;color:var(--green-deep)}
   .media-card p{font-size:.9rem;color:var(--ink-soft)}
+  .pc{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+  .pc-head{background:var(--green-deep);color:#fff;padding:14px 18px;display:flex;flex-direction:column}
+  .pc-head span{font-family:'Libre Baskerville',serif;font-weight:700;font-size:1.05rem}
+  .pc-head small{font-size:.76rem;color:#b9d3b8;margin-top:2px}
+  .pc-head.alt{background:var(--green-mid)}
+  .pc-row{display:flex;justify-content:space-between;gap:14px;padding:12px 18px;border-top:1px solid var(--line);font-size:.88rem}
+  .pc-row:first-of-type{border-top:0}
+  .pc-row .note{display:block;font-size:.74rem;color:var(--ink-soft);margin-top:2px}
+  .pc-amt{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums;font-weight:600}
+  .pc-amt .basis{display:block;font-size:.72rem;color:var(--ink-soft);font-weight:500}
+  .pc-total{margin-top:auto;display:flex;justify-content:space-between;padding:14px 18px;background:var(--leaf-soft);font-weight:700;color:var(--green-deep);border-top:1px solid var(--line)}
   /* Tables */
   .tbl{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);font-size:.9rem}
   .tbl th{background:var(--green-deep);color:#fff;text-align:left;font-weight:600;font-size:.78rem;letter-spacing:.04em;padding:12px 16px}
@@ -316,21 +327,20 @@
     </tbody>
   </table></div>
 
-  <h3 style="margin:34px 0 12px;font-size:1.2rem;color:var(--green-deep)">Ongoing: platform and apps, per year</h3>
-  <div class="tbl-wrap"><table class="tbl">
-    <thead><tr><th>Item</th><th>Basis</th><th class="r">Per year</th></tr></thead>
-    <tbody>
-      <tr><td><b>Shopify Plus</b><span class="note">3-year term. Billed in USD; CAD shown at 1.40</span></td><td>US$2,300 / month</td><td class="r num-tab">$38,640</td></tr>
-      <tr><td><b>FullComm subscription</b><span class="note">Picking, substitutions, windows, capacity, buffer</span></td><td>$210 per store / month, 6 stores</td><td class="r num-tab">$15,120</td></tr>
-      <tr><td><b>FullComm per-order fees</b><span class="note">At today's ~15 orders a week; scales with volume (see below)</span></td><td>$0.77 per order</td><td class="r num-tab">$601</td></tr>
-      <tr><td><b>NetSuite connector</b><span class="note">NetSuite Integration TM Enterprise assumed; final choice during technical strategy. Celigo can run up to $26,460 / yr.</span></td><td>Annual licence</td><td class="r num-tab">$2,786</td></tr>
-      <tr><td><b>Reviews app (Yotpo)</b><span class="note">Priced at the 500-orders-a-month tier for growth; about $250 / yr at today's volume</span></td><td>$125 / month</td><td class="r num-tab">$1,495</td></tr>
-      <tr class="total"><td colspan="2">Recurring total, Simplistic approach</td><td class="r num-tab">$58,642</td></tr>
-      <tr class="sub"><td colspan="3">Novatize approach</td></tr>
-      <tr><td><b>Shopify Plus</b><span class="note">Same platform fee. Billed in USD; CAD shown at 1.40</span></td><td>US$2,300 / month</td><td class="r num-tab">$38,640</td></tr>
-      <tr><td><b>Grocery fulfilment, other apps, hosting for custom builds, support retainer</b><span class="note">Includes Boost AI search, proposed by Novatize</span></td><td colspan="2" class="pending">Requested from Novatize, pending</td></tr>
-    </tbody>
-  </table></div>
+  <h3 style="margin:34px 0 6px;font-size:1.2rem;color:var(--green-deep)">Ongoing: platform and apps, per year</h3>
+  <p style="font-size:.86rem;color:var(--ink-soft);margin-bottom:14px">CAD per year. Shopify Plus is the same under either partner; the rest depends on each partner's approach.</p>
+  <div class="grid g2 pc-grid">
+    <div class="pc">
+      <div class="pc-head"><span>Simplistic approach</span><small>FullComm for grocery fulfilment</small></div>
+      <div class="pc-row"><div><b>Shopify Plus</b><span class="note">3-year term, billed in USD</span></div><div class="pc-amt"><span class="basis">US$2,300 / mo</span>$38,640</div></div><div class="pc-row"><div><b>FullComm subscription</b><span class="note">Picking, substitutions, windows, capacity, buffer</span></div><div class="pc-amt"><span class="basis">$210 / store / mo</span>$15,120</div></div><div class="pc-row"><div><b>FullComm per-order fees</b><span class="note">At today's ~15 orders a week; scales with volume</span></div><div class="pc-amt"><span class="basis">$0.77 / order</span>$601</div></div><div class="pc-row"><div><b>NetSuite connector</b><span class="note">NetSuite Integration TM Enterprise assumed; Celigo can run up to $26,460 / yr</span></div><div class="pc-amt"><span class="basis">Annual licence</span>$2,786</div></div><div class="pc-row"><div><b>Reviews app (Yotpo)</b><span class="note">500-orders-a-month tier, priced for growth</span></div><div class="pc-amt"><span class="basis">$125 / mo</span>$1,495</div></div>
+      <div class="pc-total"><span>Recurring total</span><span class="num-tab">$58,642</span></div>
+    </div>
+    <div class="pc">
+      <div class="pc-head alt"><span>Novatize approach</span><small>Ongoing costs requested, not yet received</small></div>
+      <div class="pc-row"><div><b>Shopify Plus</b><span class="note">3-year term, billed in USD</span></div><div class="pc-amt"><span class="basis">US$2,300 / mo</span>$38,640</div></div><div class="pc-row"><div><b>Grocery fulfilment</b><span class="note">Novatize's own approach for picking, substitutions and delivery</span></div><div class="pc-amt"><span class="basis"></span><span class="pending">Pending</span></div></div><div class="pc-row"><div><b>Other apps</b><span class="note">Includes Boost AI search, proposed by Novatize</span></div><div class="pc-amt"><span class="basis"></span><span class="pending">Pending</span></div></div><div class="pc-row"><div><b>Hosting and maintenance</b><span class="note">For anything Novatize builds custom</span></div><div class="pc-amt"><span class="basis"></span><span class="pending">Pending</span></div></div><div class="pc-row"><div><b>NetSuite connector</b><span class="note">Licence cost not included in Novatize's estimate</span></div><div class="pc-amt"><span class="basis"></span><span class="pending">Pending</span></div></div>
+      <div class="pc-total"><span>Recurring total</span><span class="num-tab">$38,640 <span class="pending">+ pending</span></span></div>
+    </div>
+  </div>
   <p style="font-size:.78rem;color:var(--ink-soft);margin-top:10px">Post-launch support from either partner is not included above. Email marketing (Mailchimp or Brevo) is selected during technical strategy and not priced here.</p>
 
   <!-- Scenario -->
