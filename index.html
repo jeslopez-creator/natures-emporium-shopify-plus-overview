@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nature's Emporium × Shopify Plus | Pricing &amp; Total Cost of Ownership</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Questrial&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green-deep:#003d22; --green:#006838; --green-mid:#097839; --leaf:#68a243; --leaf-soft:#e7f3dd;
+    --sun:#f2c418; --sun-soft:#fdf3c4;
+    --cream:#f7f9f2; --cream-2:#eef3e6;
+    --ink:#1d2a20; --ink-soft:#4f5d52;
+    --shopify:#008060; --red:#c01a29; --red-soft:#fbe9eb;
+    --line:#dfe7d6;
+    --shadow:0 10px 40px rgba(0,61,34,.10);
+    --shadow-lg:0 24px 70px rgba(0,61,34,.18);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+  h1,h2,h3{font-family:'Libre Baskerville',Georgia,serif;font-weight:700;line-height:1.15;letter-spacing:-.01em}
+  .eyebrow{font-family:'Questrial',sans-serif;font-size:.74rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--leaf)}
+  .num-tab{font-variant-numeric:tabular-nums}
+  b,strong{font-weight:700}
+
+  /* Brand bar */
+  .brandbar{background:#fff;border-bottom:4px solid transparent;border-image:linear-gradient(90deg,var(--green),var(--leaf),var(--sun)) 1}
+  .brandbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 28px;flex-wrap:wrap}
+  .brandbar img{height:44px;width:auto;display:block}
+  .brandbar .x{font-family:'Questrial',sans-serif;font-size:.85rem;color:var(--ink-soft);display:flex;align-items:center;gap:10px}
+  .brandbar .x .pill{background:var(--shopify);color:#fff;font-weight:700;padding:5px 12px;border-radius:100px;font-family:'Inter',sans-serif;font-size:.78rem}
+
+  /* Hero */
+  header.hero{background:radial-gradient(1100px 560px at 80% -10%,rgba(242,196,24,.22),transparent 60%),linear-gradient(160deg,var(--green-deep) 0%,var(--green) 60%,var(--green-mid) 130%);color:#fff;position:relative;overflow:hidden;padding:60px 0 76px}
+  .hero .eyebrow{color:var(--sun)}
+  .hero h1{font-size:clamp(2.2rem,5.4vw,3.9rem);color:#fff;max-width:18ch;margin-top:14px}
+  .hero h1 em{font-style:italic;color:var(--sun)}
+  .hero .sub{font-size:1.08rem;max-width:60ch;margin-top:18px;color:#e4f0e2}
+  .hero .meta{margin-top:26px;display:flex;flex-wrap:wrap;gap:10px;font-size:.78rem}
+  .hero .meta span{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.2);padding:6px 13px;border-radius:100px}
+  .headline-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:42px}
+  .hcard{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:22px 20px}
+  .hcard .num{font-family:'Libre Baskerville',serif;font-size:2.3rem;font-weight:700;line-height:1;color:#fff}
+  .hcard .num small{font-size:.9rem;font-family:'Inter',sans-serif;font-weight:600;opacity:.85}
+  .hcard .num.good{color:var(--sun)}
+  .hcard .lbl{font-size:.86rem;color:#e4f0e2;margin-top:10px;font-weight:600}
+  .hcard .sub2{font-size:.74rem;color:#b9d3b8;margin-top:4px}
+
+  /* Nav */
+  nav.jump{position:sticky;top:0;z-index:40;background:rgba(247,249,242,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  nav.jump .wrap{display:flex;gap:4px;align-items:center;flex-wrap:wrap;padding:10px 28px}
+  nav.jump a{font-size:.8rem;font-weight:600;color:var(--ink-soft);text-decoration:none;padding:7px 12px;border-radius:100px;transition:.15s}
+  nav.jump a:hover{background:var(--leaf-soft);color:var(--green)}
+  nav.jump .tag{font-size:.68rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--green);margin-right:auto}
+
+  section{padding:64px 0}
+  section.alt{background:linear-gradient(180deg,var(--cream-2),var(--cream))}
+  .sec-head{display:flex;align-items:center;gap:16px;margin-bottom:6px}
+  .sec-num{font-family:'Libre Baskerville',serif;font-size:1.05rem;font-weight:700;color:#fff;background:var(--green);width:44px;height:44px;min-width:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow)}
+  .sec-head h2{font-size:clamp(1.6rem,3.4vw,2.3rem);color:var(--green-deep)}
+  .lead{font-size:1.04rem;color:var(--ink-soft);max-width:70ch;margin:12px 0 30px}
+  .lead b{color:var(--ink)}
+
+  /* Cards */
+  .grid{display:grid;gap:16px}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  .g2{grid-template-columns:repeat(2,1fr)}
+  .card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px 22px 20px;box-shadow:var(--shadow)}
+  .card .ico{font-size:1.5rem;line-height:1}
+  .card h3{font-size:1.08rem;margin:10px 0 6px;color:var(--green-deep)}
+  .card p{font-size:.9rem;color:var(--ink-soft)}
+  .card .quote{margin-top:12px;padding:10px 12px;border-left:3px solid var(--sun);background:var(--sun-soft);border-radius:0 10px 10px 0;font-size:.84rem;font-style:italic;color:var(--ink)}
+  .card .quote span{display:block;font-style:normal;font-size:.72rem;color:var(--ink-soft);margin-top:4px}
+  .chip{display:inline-block;font-size:.66rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:100px}
+  .chip.native{background:var(--leaf-soft);color:var(--green)}
+  .chip.app{background:var(--sun-soft);color:#7a5c00}
+  .chip.build{background:#e6eef8;color:#1f4f86}
+
+  /* Tables */
+  .tbl{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);font-size:.9rem}
+  .tbl th{background:var(--green-deep);color:#fff;text-align:left;font-weight:600;font-size:.78rem;letter-spacing:.04em;padding:12px 16px}
+  .tbl td{padding:12px 16px;border-top:1px solid var(--line);vertical-align:top}
+  .tbl td.r,.tbl th.r{text-align:right;white-space:nowrap}
+  .tbl td .note{display:block;font-size:.76rem;color:var(--ink-soft);margin-top:2px}
+  .tbl tr.total td{background:var(--leaf-soft);font-weight:700;color:var(--green-deep)}
+  .tbl tr.sub td{background:var(--cream);font-weight:700}
+  .tbl .pending{color:#7a5c00;font-weight:600;font-style:italic}
+  .tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:16px}
+  .tbl-wrap .tbl{min-width:620px}
+
+  /* Pricing */
+  .price-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px;box-shadow:var(--shadow)}
+  .price-card .big{font-family:'Libre Baskerville',serif;font-size:3rem;font-weight:700;color:var(--green-deep);line-height:1}
+  .price-card .big small{font-family:'Inter',sans-serif;font-size:.9rem;color:var(--ink-soft);font-weight:600}
+  .price-card .or{display:flex;align-items:center;gap:12px;margin:16px 0;color:var(--ink-soft);font-size:.78rem;font-weight:700;letter-spacing:.14em}
+  .price-card .or:before,.price-card .or:after{content:"";flex:1;height:1px;background:var(--line)}
+  .rate{display:flex;justify-content:space-between;align-items:center;gap:12px;border:1px solid var(--line);border-radius:12px;padding:11px 14px;margin-top:8px;background:var(--cream)}
+  .rate b{font-size:1.05rem}
+  .rate span{font-size:.82rem;color:var(--ink-soft);text-align:right}
+  .rate.off{background:var(--red-soft);border-color:#f3c7cc}
+  .rate.off b{color:var(--red);text-decoration:line-through}
+  .rate.off span{color:var(--red);font-style:italic}
+  .incl{columns:2;column-gap:28px;margin-top:6px}
+  .incl li{list-style:none;break-inside:avoid;padding:7px 0 7px 26px;position:relative;font-size:.9rem;color:var(--ink-soft);border-bottom:1px dashed var(--line)}
+  .incl li:before{content:"✓";position:absolute;left:0;top:7px;color:#fff;background:var(--leaf);width:18px;height:18px;border-radius:50%;font-size:.7rem;display:flex;align-items:center;justify-content:center}
+  .incl li b{color:var(--ink)}
+
+  /* Callouts */
+  .callout{border-radius:16px;padding:18px 20px;margin-top:22px;font-size:.92rem}
+  .callout.green{background:var(--leaf-soft);border:1px solid #cfe4bd}
+  .callout.sun{background:var(--sun-soft);border:1px solid #f0dc8a}
+  .callout h4{font-family:'Libre Baskerville',serif;font-size:1rem;color:var(--green-deep);margin-bottom:4px}
+
+  /* Scenario tool */
+  .scen{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:var(--shadow-lg);margin-top:26px}
+  .scen-top{display:flex;flex-wrap:wrap;gap:22px;align-items:flex-end}
+  .scen label{font-size:.78rem;font-weight:700;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.08em;display:block;margin-bottom:6px}
+  .scen .ctrl{flex:1;min-width:240px}
+  .scen input[type=range]{width:100%;accent-color:var(--green)}
+  .scen .val{font-family:'Libre Baskerville',serif;font-size:1.5rem;color:var(--green-deep)}
+  .presets{display:flex;gap:8px;flex-wrap:wrap}
+  .presets button{font:inherit;font-size:.8rem;font-weight:600;border:1px solid var(--line);background:var(--cream);color:var(--ink);padding:8px 13px;border-radius:100px;cursor:pointer}
+  .presets button.on{background:var(--green);color:#fff;border-color:var(--green)}
+  .scen-out{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:20px}
+  .so{background:var(--cream);border-radius:14px;padding:14px}
+  .so .k{font-size:.72rem;color:var(--ink-soft);font-weight:600}
+  .so .v{font-family:'Libre Baskerville',serif;font-size:1.35rem;color:var(--green-deep);margin-top:4px}
+  .so.hl{background:var(--green-deep)}
+  .so.hl .k{color:#b9d3b8}.so.hl .v{color:var(--sun)}
+  .bars{margin-top:18px}
+  .bar-row{display:grid;grid-template-columns:170px 1fr 110px;gap:12px;align-items:center;font-size:.84rem;margin-top:8px}
+  .bar-track{height:14px;background:var(--cream-2);border-radius:100px;overflow:hidden}
+  .bar-fill{height:100%;border-radius:100px;transition:width .3s}
+  .bar-row .amt{text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+
+  /* Timeline */
+  .tl{position:relative;margin-top:10px}
+  .tl-item{display:grid;grid-template-columns:150px 1fr;gap:18px;padding:14px 0;border-bottom:1px dashed var(--line)}
+  .tl-item .when{font-weight:800;color:var(--green);font-size:.88rem}
+  .tl-item .what b{color:var(--green-deep)}
+  .tl-item .what p{font-size:.88rem;color:var(--ink-soft)}
+  .tl-item.key .when{color:var(--red)}
+
+  footer{background:var(--green-deep);color:#b9d3b8;padding:36px 0;font-size:.76rem}
+  footer b{color:#fff}
+  footer ol{margin:10px 0 0 18px}
+  footer a{color:#dbeccf}
+
+  @media (max-width:860px){
+    .g3,.headline-cards{grid-template-columns:1fr 1fr}
+    .scen-out{grid-template-columns:1fr 1fr}
+  }
+  @media (max-width:620px){
+    .wrap{padding:0 16px}
+    nav.jump .wrap,.brandbar .wrap{padding-left:16px;padding-right:16px}
+    .g3,.g2,.headline-cards{grid-template-columns:1fr}
+    .incl{columns:1}
+    .tl-item{grid-template-columns:1fr;gap:4px}
+    .bar-row{grid-template-columns:110px 1fr 84px}
+    .brandbar img{height:34px}
+  }
+  @media print{nav.jump{display:none}section{padding:36px 0}.scen{box-shadow:none}}
+</style>
+</head>
+<body>
+
+<div class="brandbar"><div class="wrap">
+  <img src="data:image/png;base64,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" alt="Nature's Emporium, Your Neighbourhood Health Food Market">
+  <div class="x">prepared with <span class="pill">Shopify Plus</span></div>
+</div></div>
+
+<header class="hero"><div class="wrap">
+  <div class="eyebrow">Pricing &amp; total cost of ownership</div>
+  <h1>Grocery online, <em>run by your own team.</em></h1>
+  <p class="sub">Everything you need to compare: what Shopify Plus costs, what the two partner approaches add, how costs move as online grows toward $10M, and why a commerce platform your team can run beats one you have to keep maintaining.</p>
+  <div class="meta">
+    <span>Prepared for John Charleson, VP Technology</span>
+    <span>October 28, 2026</span>
+    <span>All figures in CAD · Shopify Plus billed in USD</span>
+  </div>
+  <div class="headline-cards">
+    <div class="hcard"><div class="num good">US$2,300<small> /mo</small></div><div class="lbl">Shopify Plus platform fee</div><div class="sub2">Stays flat until online sales pass about CA$11M a year</div></div>
+    <div class="hcard"><div class="num">CA$58.6K<small> /yr</small></div><div class="lbl">Platform + apps at today's volume</div><div class="sub2">Simplistic approach: Shopify Plus, FullComm, NetSuite connector, reviews</div></div>
+    <div class="hcard"><div class="num good">0</div><div class="lbl">Servers, patches or upgrade projects</div><div class="sub2">Hosting, security and platform updates are included</div></div>
+  </div>
+</div></header>
+
+<nav class="jump"><div class="wrap">
+  <span class="tag">Jump to</span>
+  <a href="#priorities">1 · What matters</a>
+  <a href="#why">2 · Why Shopify</a>
+  <a href="#grocery">3 · Grocery fit</a>
+  <a href="#pricing">4 · Plus pricing</a>
+  <a href="#tco">5 · Total cost</a>
+  <a href="#next">6 · Next steps</a>
+</div></nav>
+
+<!-- 1 -->
+<section id="priorities"><div class="wrap">
+  <div class="sec-head"><div class="sec-num">1</div><div><div class="eyebrow">What we heard</div><h2>What matters most to Nature's Emporium</h2></div></div>
+  <p class="lead">Across our conversations since August, six things kept coming up. Every section that follows is measured against these, in your words where we have them.</p>
+  <div class="grid g3">
+    <div class="card"><div class="ico">🧑‍💻</div><h3>Run by a three-person IT team</h3><p>The platform has to be something your team can support long term, with partners for the heavy lifting rather than a permanent dependency on developers.</p></div>
+    <div class="card"><div class="ico">💳</div><h3>One clean charge per order</h3><p>Authorize once, capture the actual picked amount, and end the duplicate card holds that drive complaints today.</p></div>
+    <div class="card"><div class="ico">🗄️</div><h3>NetSuite stays the source of truth</h3><p>Items, prices, store inventory and customers flow in from NetSuite, and final picked orders flow back.</p><div class="quote">"Any solution that we're putting in now has to integrate back into NetSuite."<span>John, Oct 2</span></div></div>
+    <div class="card"><div class="ico">🌿</div><h3>A site you're proud to promote</h3><p>Simple guest checkout, clear per-kg pricing, rich product content, and a site worth putting real marketing behind.</p><div class="quote">"The intent is to get a site that we are happy and proud of."<span>John, Oct 2</span></div></div>
+    <div class="card"><div class="ico">📈</div><h3>Costs that respect grocery margins</h3><p>A realistic, predictable run cost that grows sensibly as online moves from about 1% of sales toward 10%.</p><div class="quote">"There's not a lot of margins in grocery."<span>John, Oct 2</span></div></div>
+    <div class="card"><div class="ico">🧭</div><h3>Scope it once, grow into it</h3><p>Corporate catering, national shipping and a new store in 2028 should attach to the same platform, not trigger another replatform.</p><div class="quote">"We want to make sure we include everything that we're going to need so that we don't have to come back."<span>John, Oct 2</span></div></div>
+  </div>
+</div></section>
+
+<!-- 2 -->
+<section id="why" class="alt"><div class="wrap">
+  <div class="sec-head"><div class="sec-num">2</div><div><div class="eyebrow">Shopify vs. a grocery-specific platform</div><h2>A platform your team runs, not one you maintain</h2></div></div>
+  <p class="lead">A grocery-specific platform may cover more grocery workflows out of the box. The bigger question is <b>who keeps it running, who can change it, and what it costs as you grow</b>. On Shopify Plus, the platform itself is Shopify's job. Your team's job is merchandising and growth.</p>
+  <div class="grid g3">
+    <div class="card"><div class="ico">🛠️</div><h3>No maintenance or upkeep</h3><p>Hosting, CDN, Level 1 PCI DSS and SOC 2 compliance, bot protection and <b>automatic platform updates</b> are part of Plus. No servers, patches or version upgrades for your team to plan around.</p></div>
+    <div class="card"><div class="ico">🎨</div><h3>Low-code, no-code site changes</h3><p>Your team edits pages in the <b>theme editor</b> with drag-and-drop sections and blocks. No developer tickets for a new banner, landing page or holiday catering page.</p></div>
+    <div class="card"><div class="ico">🥕</div><h3>Rich product content in house</h3><p>Nutrition, ingredients, allergens and certifications live in structured <b>metafields</b> that feed product pages and dietary filters, managed by your team, not code.</p></div>
+    <div class="card"><div class="ico">⏱️</div><h3>Schedule it, don't babysit it</h3><p><b>Launchpad</b> (Plus only) schedules sales, theme changes and promotions to go live and end on their own. <b>Shopify Flow</b> automates routine tasks, such as triggering delivery dispatch when an order is ready.</p></div>
+    <div class="card"><div class="ico">🛒</div><h3>The best-converting checkout</h3><p>Shopify's checkout converts <b>15% better on average, and up to 36% better</b> than competitors. Shop Pay can lift conversion by <b>up to 50%</b> compared with guest checkout.¹</p></div>
+    <div class="card"><div class="ico">🤖</div><h3>Ready for AI shopping</h3><p>Through <b>Shopify Catalog</b>, eligible product data is made available in a structured format to supported AI shopping channels. Clean data you build once, for your site and for AI discovery.</p></div>
+  </div>
+
+  <h3 style="margin:40px 0 14px;font-size:1.3rem;color:var(--green-deep)">Questions worth asking every platform on your list</h3>
+  <div class="tbl-wrap"><table class="tbl">
+    <thead><tr><th style="width:36%">Question</th><th>On Shopify Plus</th></tr></thead>
+    <tbody>
+      <tr><td><b>Who maintains hosting, security and upgrades?</b></td><td>Shopify. Included in the platform fee, updated automatically.</td></tr>
+      <tr><td><b>Can marketing change the site without a developer?</b></td><td>Yes. Theme editor, sections and blocks, metafields, Launchpad scheduling.</td></tr>
+      <tr><td><b>What happens to the platform fee as online grows?</b></td><td>US$2,300 a month, or 0.35% of online sales if higher. At your $10M goal, the flat fee still applies.</td></tr>
+      <tr><td><b>Does NetSuite stay the system of record?</b></td><td>Yes, through a prebuilt NetSuite connector configured for your custom fields.</td></tr>
+      <tr><td><b>If you outgrow a feature, where do you turn?</b></td><td>The Shopify App Store and Shopify Plus partners, without leaving the platform.</td></tr>
+      <tr><td><b>Will catering, national shipping and store #7 need a new platform?</b></td><td>No. Up to 200 locations, unlimited staff accounts and unlimited staging stores are included.</td></tr>
+      <tr><td><b>Who picks up the phone at 2am?</b></td><td>Priority 24/7 phone and chat support on Plus.</td></tr>
+    </tbody>
+  </table></div>
+</div></section>
+
+<!-- 3 -->
+<section id="grocery"><div class="wrap">
+  <div class="sec-head"><div class="sec-num">3</div><div><div class="eyebrow">How the grocery pieces fit</div><h2>Native where Shopify is strong, proven apps for grocery</h2></div></div>
+  <p class="lead">Shown here is <b>Simplistic's proposed approach</b>: Shopify Plus for commerce, <b>FullComm</b> for in-store picking, substitutions and delivery windows, and NetSuite as the source of truth, with custom work limited to the pieces specific to Nature's Emporium. <b>Novatize proposes its own approach for these workflows rather than FullComm</b>; NetSuite stays the source of truth either way.</p>
+  <div class="tbl-wrap"><table class="tbl">
+    <thead><tr><th style="width:34%">Your requirement</th><th style="width:16%">How</th><th>What it looks like</th></tr></thead>
+    <tbody>
+      <tr><td><b>Weighted items, one clean charge</b></td><td><span class="chip native">Native</span> <span class="chip app">App</span></td><td>A labelled 15% buffer is authorized at checkout, and only the actual picked amount is captured. Shopify Payments supports capturing less than the authorized amount.</td></tr>
+      <tr><td><b>Substitutions with customer approval</b></td><td><span class="chip app">App</span></td><td>FullComm sends the customer a substitution page with approve or decline and a timed auto-cancel.</td></tr>
+      <tr><td><b>Handheld picking</b></td><td><span class="chip app">App</span></td><td>FullComm on the Honeywell handhelds already in your stores, with weight entry, replacing printed orders and re-keying.</td></tr>
+      <tr><td><b>Pickup and delivery windows with capacity</b></td><td><span class="chip app">App</span></td><td>11–2, 2–5 and 5–8 windows, capacity per store per window, separate catering and hot-counter lead times.</td></tr>
+      <tr><td><b>Store-level inventory from NetSuite</b></td><td><span class="chip native">Native</span> <span class="chip app">App</span></td><td>Six store locations in Shopify, synced from NetSuite through the connector, with online safety stock.</td></tr>
+      <tr><td><b>Catering meal deals (48-hour notice)</b></td><td><span class="chip native">Native</span></td><td>Variants and metafields replace hundreds of separately managed variations.</td></tr>
+      <tr><td><b>Guest checkout, Shop Pay, Apple Pay, Google Pay</b></td><td><span class="chip native">Native</span></td><td>One-page Shopify checkout, no account required.</td></tr>
+      <tr><td><b>Discount-number customers, Seniors' Day</b></td><td><span class="chip build">Partner build</span></td><td>Shopify Functions apply your existing discount rules automatically.</td></tr>
+      <tr><td><b>Automatic DoorDash dispatch</b></td><td><span class="chip build">Partner build</span></td><td>A driver is requested when the order is marked ready, replacing manual bookings.</td></tr>
+    </tbody>
+  </table></div>
+  <div class="callout green"><h4>Holiday and catering orders</h4>A card authorization lasts 7 days, and Shopify Plus can extend it up to 30 days on Visa, Mastercard and Amex, with a 1.75% fee on captures after day 7. Because holiday pre-orders open about two weeks ahead, Simplistic's proposed approach charges catering and holiday orders in full when placed, as you do today, and keeps regular grocery windows within 7 days.</div>
+</div></section>
+
+<!-- 4 -->
+<section id="pricing" class="alt"><div class="wrap">
+  <div class="sec-head"><div class="sec-num">4</div><div><div class="eyebrow">Shopify Plus</div><h2>Pricing &amp; rates</h2></div></div>
+  <p class="lead">36-month initial term. The platform fee is billed in USD; payment processing is in CAD. You pay the <b>greater</b> of the monthly minimum or the variable percentage of online sales.</p>
+  <div class="grid g2">
+    <div class="price-card">
+      <div class="eyebrow">Platform fee</div>
+      <div class="big num-tab" style="margin-top:10px">$2,300 <small>USD / month</small></div>
+      <div class="or">OR</div>
+      <div class="rate"><b>0.35%</b><span>Online (D2C) sales, if greater</span></div>
+      <div class="rate off"><b>0.20%</b><span>Third-party transaction fee, only if you don't use Shopify Payments</span></div>
+      <div class="callout sun" style="margin-top:16px"><h4>What this means for you</h4>0.35% only overtakes $2,300 a month once online sales pass about <b>CA$11M a year</b>. At your $10M goal, the fee is still the flat $2,300. Your in-store sales on your existing POS are not part of this fee.</div>
+    </div>
+    <div class="price-card">
+      <div class="eyebrow">Payment processing · Shopify Payments</div>
+      <p style="font-size:.88rem;color:var(--ink-soft);margin-top:8px">Unlocks Shop Pay and accelerated checkouts. Replaces CyberSource and Global Payments online.</p>
+      <div class="rate"><b>2.15% + 30¢</b><span>Online, standard cards</span></div>
+      <div class="rate"><b>3.15% + 30¢</b><span>Online, Amex</span></div>
+      <div class="rate"><b>3.15% + 30¢</b><span>Online, international cards</span></div>
+      <p style="font-size:.74rem;color:var(--ink-soft);margin-top:12px">Shopify Plus rates in CAD. Final rates are confirmed in your Shopify Plus agreement.</p>
+    </div>
+  </div>
+
+  <h3 style="margin:38px 0 10px;font-size:1.3rem;color:var(--green-deep)">Included with Shopify Plus</h3>
+  <ul class="incl">
+    <li><b>Hosting, CDN and DDoS protection</b>, no servers to run</li>
+    <li><b>Automatic platform updates</b>, no upgrade projects</li>
+    <li><b>Level 1 PCI DSS and SOC 2</b> compliance</li>
+    <li><b>Priority 24/7</b> phone and chat support</li>
+    <li><b>Unlimited staff accounts</b></li>
+    <li><b>Unlimited staging stores</b> to test changes safely</li>
+    <li><b>Up to 200 locations</b>, room for store #7 and beyond</li>
+    <li><b>Launchpad</b> for scheduled promotions and events</li>
+    <li><b>Shopify Flow</b> automation</li>
+    <li><b>Search &amp; Discovery</b> filters and recommendations</li>
+    <li><b>Checkout customization</b> and Shopify Functions</li>
+    <li><b>Extended card authorizations</b> up to 30 days</li>
+  </ul>
+</div></section>
+
+<!-- 5 -->
+<section id="tco"><div class="wrap">
+  <div class="sec-head"><div class="sec-num">5</div><div><div class="eyebrow">Total cost of ownership</div><h2>One-time build, ongoing run cost, and how it scales</h2></div></div>
+  <p class="lead">Two numbers matter: the <b>one-time cost to build and launch</b>, and the <b>ongoing cost to run</b> the platform and its apps every year after.</p>
+
+  <h3 style="margin:6px 0 12px;font-size:1.2rem;color:var(--green-deep)">One-time: implementation</h3>
+  <div class="tbl-wrap"><table class="tbl">
+    <thead><tr><th>Item</th><th class="r">Simplistic</th><th class="r">Novatize</th></tr></thead>
+    <tbody>
+      <tr><td><b>Implementation</b><span class="note">Simplistic: fixed SOW, 666 hours. Novatize: phased estimate, confirmed after their evaluation phase.</span></td><td class="r num-tab">$140,340</td><td class="r num-tab">$192,470 to $230,964</td></tr>
+      <tr><td><b>FullComm setup</b><span class="note">Paid to FullComm. Simplistic approach only.</span></td><td class="r num-tab">$5,600</td><td class="r num-tab">Not applicable</td></tr>
+      <tr class="total"><td>One-time total</td><td class="r num-tab">$145,940</td><td class="r num-tab">$192,470 to $230,964</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 style="margin:34px 0 12px;font-size:1.2rem;color:var(--green-deep)">Ongoing: platform and apps, per year</h3>
+  <div class="tbl-wrap"><table class="tbl">
+    <thead><tr><th>Item</th><th>Basis</th><th class="r">Per year</th></tr></thead>
+    <tbody>
+      <tr><td><b>Shopify Plus</b><span class="note">3-year term. Billed in USD; CAD shown at 1.40</span></td><td>US$2,300 / month</td><td class="r num-tab">$38,640</td></tr>
+      <tr><td><b>FullComm subscription</b><span class="note">Picking, substitutions, windows, capacity, buffer</span></td><td>$210 per store / month, 6 stores</td><td class="r num-tab">$15,120</td></tr>
+      <tr><td><b>FullComm per-order fees</b><span class="note">At today's ~15 orders a week; scales with volume (see below)</span></td><td>$0.77 per order</td><td class="r num-tab">$601</td></tr>
+      <tr><td><b>NetSuite connector</b><span class="note">NetSuite Integration TM Enterprise assumed; final choice during technical strategy. Celigo can run up to $26,460 / yr.</span></td><td>Annual licence</td><td class="r num-tab">$2,786</td></tr>
+      <tr><td><b>Reviews app (Yotpo)</b><span class="note">Priced at the 500-orders-a-month tier for growth; about $250 / yr at today's volume</span></td><td>$125 / month</td><td class="r num-tab">$1,495</td></tr>
+      <tr class="total"><td colspan="2">Recurring total, Simplistic approach</td><td class="r num-tab">$58,642</td></tr>
+      <tr class="sub"><td colspan="3">Novatize approach</td></tr>
+      <tr><td><b>Shopify Plus</b><span class="note">Same platform fee. Billed in USD; CAD shown at 1.40</span></td><td>US$2,300 / month</td><td class="r num-tab">$38,640</td></tr>
+      <tr><td><b>Grocery fulfilment, other apps, hosting for custom builds, support retainer</b><span class="note">Includes Boost AI search, proposed by Novatize</span></td><td colspan="2" class="pending">Requested from Novatize, pending</td></tr>
+    </tbody>
+  </table></div>
+  <p style="font-size:.78rem;color:var(--ink-soft);margin-top:10px">Post-launch support from either partner is not included above. Email marketing (Mailchimp or Brevo) is selected during technical strategy and not priced here.</p>
+
+  <!-- Scenario -->
+  <div class="scen" id="scen">
+    <div class="eyebrow" style="color:var(--green)">Growth scenario</div>
+    <h3 style="font-size:1.25rem;color:var(--green-deep);margin:6px 0 16px">How the run cost moves as online grows</h3>
+    <div class="scen-top">
+      <div class="ctrl">
+        <label for="opw">Online orders per week</label>
+        <div class="val num-tab"><span id="opwv">15</span> orders / week</div>
+        <input type="range" id="opw" min="15" max="1300" step="1" value="15">
+      </div>
+      <div>
+        <label for="aov">Average order</label>
+        <div class="presets" id="aov"><button data-a="150" class="on">$150</button><button data-a="200">$200</button><button data-a="250">$250</button></div>
+      </div>
+      <div>
+        <label>Jump to</label>
+        <div class="presets">
+          <button data-v="15" class="on">Today</button>
+          <button data-v="50">50 / wk target</button>
+          <button data-s="5000000">$5M online</button>
+          <button data-s="10000000">$10M goal</button>
+        </div>
+      </div>
+    </div>
+    <div class="scen-out">
+      <div class="so"><div class="k">Online sales / yr</div><div class="v num-tab" id="o-sales">$0</div></div>
+      <div class="so"><div class="k">Shopify Plus / yr</div><div class="v num-tab" id="o-plus">$0</div></div>
+      <div class="so"><div class="k">All platform + apps / yr</div><div class="v num-tab" id="o-total">$0</div></div>
+      <div class="so hl"><div class="k">As a share of online sales</div><div class="v num-tab" id="o-pct">0%</div></div>
+    </div>
+    <div class="bars" id="bars"></div>
+    <p style="font-size:.76rem;color:var(--ink-soft);margin-top:14px">CAD. Average order defaults to CA$150, the assumption in Simplistic's worksheet. Uses the Simplistic app stack. FullComm per-order fees and the Shopify variable fee recalculate; other items are held flat. Payment processing is excluded because you pay it on any platform.</p>
+  </div>
+
+</div></section>
+
+<!-- 6 -->
+<section id="next" class="alt"><div class="wrap">
+  <div class="sec-head"><div class="sec-num">6</div><div><div class="eyebrow">Timeline</div><h2>Dates and decisions ahead</h2></div></div>
+  <p class="lead">Your hard deadline is the NetSuite renewal in February 2028, but a few nearer dates shape the plan.</p>
+  <div class="tl">
+    <div class="tl-item key"><div class="when">Nov 17, 2026</div><div class="what"><b>Global Payments contract ends</b><p>Decide whether to roll it while the project runs. Shopify Payments onboarding starts at kickoff.</p></div></div>
+    <div class="tl-item"><div class="when">Nov 2026</div><div class="what"><b>Choose a partner and sign</b><p>Simplistic's plan kicks off November 2. Novatize begins with an evaluation and solution-validation phase.</p></div></div>
+    <div class="tl-item"><div class="when">End of 2026</div><div class="what"><b>Platform direction set</b><p>Your stated target for the decision, ahead of 2027 budget allocation.</p></div></div>
+    <div class="tl-item key"><div class="when">Mar to Apr 2027</div><div class="what"><b>Launch window</b><p>Simplistic targets the week of March 15. Easter is March 28 and holiday pre-orders open about two weeks ahead, so choose between launching into Easter or moving to mid-April.</p></div></div>
+    <div class="tl-item"><div class="when">Early 2028</div><div class="what"><b>Store #7 opens</b><p>Added as a new location on the same platform.</p></div></div>
+    <div class="tl-item key"><div class="when">Feb 2028</div><div class="what"><b>NetSuite renewal</b><p>SuiteCommerce Advanced licences come off, with a year of runway after launch.</p></div></div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <b>Sources and notes</b>
+  <ol>
+    <li>Checkout conversion: study completed in April 2023 with a Big Three global management consulting company, commissioned by Shopify. Shop Pay lift compared with guest checkout. <a href="https://www.shopify.com/enterprise/blog/shopify-checkout">shopify.com/enterprise/blog/shopify-checkout</a></li>
+    <li>Shopify Plus features (hosting, updates, compliance, support, locations, staging stores, Launchpad, extended authorizations): <a href="https://help.shopify.com/en/manual/intro-to-shopify/pricing-plans/plans-features/shopify-plus-plan">Shopify Help Center, Shopify Plus plan</a>. Theme editor: <a href="https://help.shopify.com/en/manual/online-store/themes/theme-structure/sections-and-blocks">sections and blocks</a>. Shopify Catalog: <a href="https://help.shopify.com/en/manual/shopify-catalog">Shopify Catalog</a>.</li>
+    <li>Implementation and app costs: Simplistic proposal and Statement of Work V1 (Oct 22, 2026) and Simplistic TCO worksheet (Oct 26, 2026); Novatize budget estimate (Oct 15, 2026 presentation). Partner figures are each partner's own estimates.</li>
+    <li>Currency: all figures in CAD. Shopify Plus is billed in USD (US$2,300 / month) and shown in CAD at 1.40; FullComm and app prices quoted in USD are converted at the same rate. Partner implementation figures shown as quoted. Novatize recurring costs exclude items still pending from Novatize.</li>
+  </ol>
+  <p style="margin-top:14px">Prepared by Shopify for Nature's Emporium · Confidential</p>
+</div></footer>
+
+<script>
+(function(){
+  var FX=1.4, AOV=150, STORES=6, MAXW=1300;
+  var fixedUSD={sub:150*STORES*12, conn:1990, rev:1068};
+  var r=document.getElementById('opw'), v=document.getElementById('opwv');
+  var fmt=function(n){return '$'+Math.round(n).toLocaleString('en-CA')};
+  var fmtK=function(n){return n>=1e6?'$'+(n/1e6).toFixed(n>=1e7?1:2)+'M':'$'+(n/1e3).toFixed(n>=1e5?0:1)+'K'};
+  function calc(w){
+    var orders=w*52, salesCAD=orders*AOV, salesUSD=salesCAD/FX;
+    var plusUSD=Math.max(27600, salesUSD*0.0035);
+    var perOrderUSD=orders*0.55;
+    var items=[
+      ['Shopify Plus',plusUSD*FX,'var(--green)'],
+      ['FullComm subscription',fixedUSD.sub*FX,'var(--leaf)'],
+      ['FullComm per-order',perOrderUSD*FX,'var(--sun)'],
+      ['NetSuite connector',fixedUSD.conn*FX,'#7fa38a'],
+      ['Reviews app',fixedUSD.rev*FX,'#b9d3b8']
+    ];
+    var total=items.reduce(function(a,b){return a+b[1]},0);
+    v.textContent=w.toLocaleString('en-CA');
+    document.getElementById('o-sales').textContent=fmtK(salesCAD);
+    document.getElementById('o-plus').textContent=fmt(plusUSD*FX);
+    document.getElementById('o-total').textContent=fmt(total);
+    document.getElementById('o-pct').textContent=(total/salesCAD*100).toFixed(total/salesCAD>=.1?0:1)+'%';
+    var max=Math.max.apply(null,items.map(function(i){return i[1]}));
+    document.getElementById('bars').innerHTML=items.map(function(i){
+      return '<div class="bar-row"><div>'+i[0]+'</div><div class="bar-track"><div class="bar-fill" style="width:'+Math.max(1.5,i[1]/max*100)+'%;background:'+i[2]+'"></div></div><div class="amt">'+fmt(i[1])+'</div></div>';
+    }).join('');
+  }
+  var jump=document.querySelectorAll('.presets button[data-v],.presets button[data-s]');
+  function wFor(b){return b.dataset.v?+b.dataset.v:Math.round(+b.dataset.s/AOV/52)}
+  function set(w){w=Math.max(15,Math.min(MAXW*2,w));r.max=Math.max(MAXW,w);r.value=w;calc(+w);jump.forEach(function(b){b.classList.toggle('on',wFor(b)===+w)})}
+  r.addEventListener('input',function(){set(+r.value)});
+  jump.forEach(function(b){b.addEventListener('click',function(){set(wFor(b))})});
+  document.querySelectorAll('#aov button').forEach(function(b){b.addEventListener('click',function(){
+    var cur=[].find.call(jump,function(x){return x.classList.contains('on')});
+    AOV=+b.dataset.a;document.querySelectorAll('#aov button').forEach(function(x){x.classList.toggle('on',x===b)});
+    set(cur?wFor(cur):+r.value)})});
+  set(15);
+})();
+</script>
+</body>
+</html>
