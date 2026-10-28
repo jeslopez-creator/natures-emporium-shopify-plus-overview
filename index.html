@@ -81,6 +81,11 @@
   .chip.app{background:var(--sun-soft);color:#7a5c00}
   .chip.build{background:#e6eef8;color:#1f4f86}
 
+  .media-card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
+  .media-card video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#111}
+  .media-card .mc-body{padding:18px 22px 20px}
+  .media-card h3{font-size:1.1rem;margin:6px 0;color:var(--green-deep)}
+  .media-card p{font-size:.9rem;color:var(--ink-soft)}
   /* Tables */
   .tbl{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);font-size:.9rem}
   .tbl th{background:var(--green-deep);color:#fff;text-align:left;font-weight:600;font-size:.78rem;letter-spacing:.04em;padding:12px 16px}
@@ -194,7 +199,7 @@
   <span class="tag">Jump to</span>
   <a href="#priorities">1 · What matters</a>
   <a href="#why">2 · Why Shopify</a>
-  <a href="#grocery">3 · Grocery fit</a>
+  <a href="#editor">3 · Your team, in control</a>
   <a href="#pricing">4 · Plus pricing</a>
   <a href="#tco">5 · Total cost</a>
   <a href="#next">6 · Next steps</a>
@@ -243,24 +248,24 @@
 </div></section>
 
 <!-- 3 -->
-<section id="grocery"><div class="wrap">
-  <div class="sec-head"><div class="sec-num">3</div><div><div class="eyebrow">How the grocery pieces fit</div><h2>Native where Shopify is strong, proven apps for grocery</h2></div></div>
-  <p class="lead">Shown here is <b>Simplistic's proposed approach</b>: Shopify Plus for commerce, <b>FullComm</b> for in-store picking, substitutions and delivery windows, and NetSuite as the source of truth, with custom work limited to the pieces specific to Nature's Emporium. <b>Novatize proposes its own approach for these workflows rather than FullComm</b>; NetSuite stays the source of truth either way.</p>
-  <div class="tbl-wrap"><table class="tbl">
-    <thead><tr><th style="width:34%">Your requirement</th><th style="width:16%">How</th><th>What it looks like</th></tr></thead>
-    <tbody>
-      <tr><td><b>Weighted items, one clean charge</b></td><td><span class="chip native">Native</span> <span class="chip app">App</span></td><td>A labelled 15% buffer is authorized at checkout, and only the actual picked amount is captured. Shopify Payments supports capturing less than the authorized amount.</td></tr>
-      <tr><td><b>Substitutions with customer approval</b></td><td><span class="chip app">App</span></td><td>FullComm sends the customer a substitution page with approve or decline and a timed auto-cancel.</td></tr>
-      <tr><td><b>Handheld picking</b></td><td><span class="chip app">App</span></td><td>FullComm on the Honeywell handhelds already in your stores, with weight entry, replacing printed orders and re-keying.</td></tr>
-      <tr><td><b>Pickup and delivery windows with capacity</b></td><td><span class="chip app">App</span></td><td>11–2, 2–5 and 5–8 windows, capacity per store per window, separate catering and hot-counter lead times.</td></tr>
-      <tr><td><b>Store-level inventory from NetSuite</b></td><td><span class="chip native">Native</span> <span class="chip app">App</span></td><td>Six store locations in Shopify, synced from NetSuite through the connector, with online safety stock.</td></tr>
-      <tr><td><b>Catering meal deals (48-hour notice)</b></td><td><span class="chip native">Native</span></td><td>Variants and metafields replace hundreds of separately managed variations.</td></tr>
-      <tr><td><b>Guest checkout, Shop Pay, Apple Pay, Google Pay</b></td><td><span class="chip native">Native</span></td><td>One-page Shopify checkout, no account required.</td></tr>
-      <tr><td><b>Discount-number customers, Seniors' Day</b></td><td><span class="chip build">Partner build</span></td><td>Shopify Functions apply your existing discount rules automatically.</td></tr>
-      <tr><td><b>Automatic DoorDash dispatch</b></td><td><span class="chip build">Partner build</span></td><td>A driver is requested when the order is marked ready, replacing manual bookings.</td></tr>
-    </tbody>
-  </table></div>
-  <div class="callout green"><h4>Holiday and catering orders</h4>A card authorization lasts 7 days, and Shopify Plus can extend it up to 30 days on Visa, Mastercard and Amex, with a 1.75% fee on captures after day 7. Because holiday pre-orders open about two weeks ahead, Simplistic's proposed approach charges catering and holiday orders in full when placed, as you do today, and keeps regular grocery windows within 7 days.</div>
+<section id="editor"><div class="wrap">
+  <div class="sec-head"><div class="sec-num">3</div><div><div class="eyebrow">Your team, in control</div><h2>Change the site yourselves, no developer ticket</h2></div></div>
+  <p class="lead">Your storefront is built from <b>sections and blocks</b> that your team edits in the theme editor and previews before publishing. Your partner builds the theme once; <b>your team runs it day to day</b>, and Shopify keeps the platform underneath it up to date.</p>
+  <div class="grid g2">
+    <div class="media-card">
+      <video src="media/editor-25.mp4" poster="media/editor-25.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Editing a home page in the Shopify theme editor"></video>
+      <div class="mc-body"><div class="eyebrow" style="color:var(--green)">Theme editor</div><h3>Edit any page, preview, publish</h3><p>Add, reorder and edit sections on any page, check desktop and mobile, then publish. Weekly specials, a holiday catering page or a new banner become content changes, not projects.</p></div>
+    </div>
+    <div class="media-card">
+      <video src="media/editor-26.mp4" poster="media/editor-26.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Sidekick generating a new theme block"></video>
+      <div class="mc-body"><div class="eyebrow" style="color:var(--green)">Sidekick</div><h3>Generate a new block from a prompt</h3><p>Describe the block you need and Sidekick, Shopify's AI assistant, generates it in the theme editor, ready for your team to customize and place anywhere on the site.</p></div>
+    </div>
+  </div>
+  <div class="grid g3" style="margin-top:16px">
+    <div class="card"><div class="ico">🧱</div><h3>Built once by your partner</h3><p>Sections are reusable modules. Once a section exists, it can be used on any page, and each copy shows its own content.</p></div>
+    <div class="card"><div class="ico">🧑‍🌾</div><h3>Run by your team</h3><p>Merchandising, flyer pages, recipes and catering content are arranged and updated by the people who know the products.</p></div>
+    <div class="card"><div class="ico">🔄</div><h3>Kept current by Shopify</h3><p>Hosting, security and platform updates happen in the background, so your three-person IT team isn't planning upgrade projects.</p></div>
+  </div>
 </div></section>
 
 <!-- 4 -->
@@ -389,7 +394,7 @@
   <b>Sources and notes</b>
   <ol>
     <li>Checkout conversion: study completed in April 2023 with a Big Three global management consulting company, commissioned by Shopify. Shop Pay lift compared with guest checkout. <a href="https://www.shopify.com/enterprise/blog/shopify-checkout">shopify.com/enterprise/blog/shopify-checkout</a></li>
-    <li>Shopify Plus features (hosting, updates, compliance, support, locations, staging stores, Launchpad, extended authorizations): <a href="https://help.shopify.com/en/manual/intro-to-shopify/pricing-plans/plans-features/shopify-plus-plan">Shopify Help Center, Shopify Plus plan</a>. Theme editor: <a href="https://help.shopify.com/en/manual/online-store/themes/theme-structure/sections-and-blocks">sections and blocks</a>. Shopify Catalog: <a href="https://help.shopify.com/en/manual/shopify-catalog">Shopify Catalog</a>.</li>
+    <li>Shopify Plus features (hosting, updates, compliance, support, locations, staging stores, Launchpad, extended authorizations): <a href="https://help.shopify.com/en/manual/intro-to-shopify/pricing-plans/plans-features/shopify-plus-plan">Shopify Help Center, Shopify Plus plan</a>. Theme editor: <a href="https://help.shopify.com/en/manual/online-store/themes/theme-structure/sections-and-blocks">sections and blocks</a>. Sidekick block generation: <a href="https://help.shopify.com/en/manual/online-store/themes/customizing-themes/theme-editor/sidekick/generate-blocks">generating theme blocks</a> (available on eligible themes). Shopify Catalog: <a href="https://help.shopify.com/en/manual/shopify-catalog">Shopify Catalog</a>.</li>
     <li>Implementation and app costs: Simplistic proposal and Statement of Work V1 (Oct 22, 2026) and Simplistic TCO worksheet (Oct 26, 2026); Novatize budget estimate (Oct 15, 2026 presentation). Partner figures are each partner's own estimates.</li>
     <li>Currency: all figures in CAD. Shopify Plus is billed in USD (US$2,300 / month) and shown in CAD at 1.40; FullComm and app prices quoted in USD are converted at the same rate. Partner implementation figures shown as quoted. Novatize recurring costs exclude items still pending from Novatize.</li>
   </ol>
